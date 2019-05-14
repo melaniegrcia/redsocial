@@ -1,0 +1,154 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    margin: 0 auto;
+    background: rgb(114, 112, 112);
+    
+    
+}
+
+.menuhome{
+    background: rgb(218, 55, 55);
+    justify-content: center;
+    text-align: left;
+    text-decoration: none;
+    position: fixed;
+    top: 0px;                    /* Distancia hasta el borde superior */  
+    left: 0px;            /* Distancia hasta el borde izquierdo */ 
+    width:100%;
+    z-index: 1; 
+    /* el z hace que no se vea transparente. el objeto por debajo del menu */
+
+}
+.menu{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Rubik', sans-menif;
+    text-decoration: none;
+}
+
+.iconos-menu{
+    text-align: left;
+    float: right;
+    padding: 20px;
+    justify-content: center;
+
+}
+.seriesmenu{
+    /* position: fixed; */
+    /* z-index: 1; */
+    padding-left: 25px;
+
+}
+
+
+.series{
+    margin: 0 auto;
+    width: 270px;
+    height: 300px;
+    padding-left: 35px;
+    
+    background-color: rgb(196, 196, 196);
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif, medium 500;
+    
+  
+    
+}
+.logo{
+    text-align: left;
+
+
+}
+.muro{
+    margin: 0 auto;
+    width: 500px;
+    height: 450px;
+    padding: 0px;
+    border: 1px solid grey;
+    
+    
+
+}
+
+.comida{
+    width: 500px;
+}
+
+.publicacion1{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(46, 45, 45);
+    padding: 10px;
+
+
+}
+.circulo{
+    color:white;
+    font-size: 30px;
+    background: rgb(9, 187, 187);
+    border-radius:50%;
+    width: 15px;
+    height: 15px;
+    margin:16px;
+    padding: 16px;
+    /* para que quede centrado el texto R
+    pongo line-height igual a width y height */
+    line-height: 15px;
+    /* float flotar elementos, en este casoo a la izq */
+    float: left;
+
+}
+.fa-ellipsis-v {
+    color:rgb(114, 111, 111);
+    float: right;
+    margin: 30px;
+    
+    
+}
+/* ICONOS */
+.iconos{
+    padding: 10px;
+
+    /* para sacar toda la caja poner 0, ya que tienen el mismo div
+    lo negas con 0 */
+    border-radius: 0;
+    border: 0;
+}
+.fa-heart{
+    color:rgb(114, 111, 111);
+    font-size: 20px;
+    padding: 10px
+}
+.fa-share-alt{
+    color:rgb(114, 111, 111);
+    font-size: 20px;
+}
+
+.fa-bell{
+    color: white;
+    font-size: 20px;
+    
+   
+    
+
+}
+.fa-envelope{
+    color: white;
+    font-size: 20px;
+    
+
+
+}
+ .col-4{
+     background-color: rgb(245, 239, 239);
+ }
+
+ .form-inline {
+     float: right;
+     padding:10px;
+
+ }
+
