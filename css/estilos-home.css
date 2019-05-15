@@ -5,7 +5,7 @@
     background-color: red;
 }
 .fondo{
-
+    
 }
 
 .categorias{
@@ -30,5 +30,6 @@
 }
 
 .imagen{
+   display: inline-block; 
     border-radius: 50px;
 }
