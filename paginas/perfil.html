@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,9 @@
 
 </head>
 <body>
-    <div class="menuhome">
-        <img class="logo" src="../img/logo.png" alt="logo" width="50px">
+
+     <div class="menuhome">
+        <img class="logo" src="../img/logo.jpg" alt="logo" width="50">
         
         <a class="menu" href="home.html">Inicio</a>
         <a class="menu" href="perfil.html">Perfil</a>
@@ -22,12 +23,12 @@
         
         <div class="iconos-menu">
                 <a href="perfil.html">
-                    <img src="../img/perfil.jpg" width="26px">
+                    <img src="../img/logo-usuario.png" width="26">
                 </a>
         </div>
         
         <div class="iconos-menu">
-        <i class="fas fa-envelope"></i>
+       <i class="fas fa-envelope"></i>
         </div>
         <div class="iconos-menu">
             <i class="fas fa-bell"></i>
@@ -37,45 +38,74 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    
-    </div>
+
+
     <!--  CON CONTAINER PUEDO MOVER EL MURO, PARA CREAR COLUMNAS -->
-     <div class="container-fluid">
+     <div class="container-fluid"> <!-- container para las 2 filas principales "vistos" y "post"-->
          <div class="mt-4 row">
              <div class="mt-5 ml-5 col-lg-4 col-md-4 col-sm-12">
-                <div class="seriesmenu  d-none d-sm-block">
-                 <div class="seriesmenu" >
-                    
-                     <!-- dnone y a partir de md en adelante se muestra -->
-                     <br>
-                    
-                     <p><strong>Series vistas</strong></p>
-
-                     <div class="series">
-                         <p><strong>Los 100</strong></p>
-                         <i class="fas fa-star"></i><br>
-                     <img src="../img/los100.jpg" width="200px">
-                     
-                    </div>
-                 </div>
-                 <div class="seriesmenu ">
-                        <br>
-                        <div class="series">
-                            <p><strong>The big bang theory</strong></p>
-                            <i class="fas fa-star"></i><br>
-                        <img src="../img/bbt.jpg" width="200px">
+                <div class="seriesmenu  d-none d-sm-block"> <!-- -->
+                    <div class="row"> <!-- fila para info del perfil-->
+                        <div class="col-6 info-perfil"> <!-- columna para img de perfil -->
+                            <img src="../img/logo-usuario.png"  height="180px"  > <!-- img de perfil usuario-->
                         
-                       </div>
+                        </div>
+
+                        <div class="col-6 texto-info-perfil"> <!-- columna para texto info perfil-->
+                                <p>
+                                <strong>
+                                    información del usuario :D msa info mas info mas info mas info mas info info info info 
+                                </strong>
+                                </p>
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="seriesmenu" >
+                        
+                        <!-- dnone y a partir de md en adelante se muestra -->
+                        <br>
+                        
+                        <p><strong>Favoritos</strong></p>
+
+                        <div class="series">
+                            <p><strong>Los 100</strong></p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <br>
+                        <img src="../img/los100.jpg" width="200">
+                        
+                        </div>
                     </div>
                     <div class="seriesmenu ">
                             <br>
                             <div class="series">
-                                <p><strong>Stranger Things</strong></p>
-                                <i class="fas fa-star"></i><br>
-                            <img src="../img/stranger-things.png" width="200px">
+                                <p><strong>The big bang theory</strong></p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <br>
+                            <img src="../img/bbt.jpg" width="200">
                             
-                           </div>
-                    </div>
+                        </div>
+                        </div>
+                        <div class="seriesmenu ">
+                                <br>
+                                <div class="series">
+                                    <p><strong>Stranger Things</strong></p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <br>
+                                <img src="../img/stranger-things.png" width="200">
+                                
+                            </div>
+                        </div>
                 </div>
                 
              </div>
@@ -102,43 +132,52 @@
                             </form>
                             <button type="button" class="btn btn-primary" id="post-button">Postear</button>
                         </div>
-                <div class="mt-5 col-1"> <!-- icono "P" del creador del post -->
-                    <div class="circulo">P</div>
-                </div>
-                
-                <div class="mt-5 col-5">
-                    <div class="muro">
+
+
+                <div class="mt-5 bloque-post">
+                    <div class="mt-5 col-1"> <!-- icono "P" del creador del post -->
+                        <div class="circulo">P</div>
+                    </div>
+                    
+                    <div class="post">
                         
                         <i class="fas fa-ellipsis-v"></i> 
                         <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
                         comentario sobre el tema</p>
                         
-                        <img class="comida" src="../img/got.jpg" alt="comida" >
+                        <img class="img-post" src="../img/got.jpg" alt="imagen del post" >
                         <div class="iconos"></div>
                         <i class="fas fa-heart"></i>
                         <i class="fas fa-share-alt"></i>
                         
                     </div>
+                    <div class="comentarios">
+                        aca van los comentarios
+                    </div>
                 </div>
 
+                <div class="bloque-post">
+                    <div class="mt-5 col-1">
+                            <div class="circulo">P</div>
+                    </div>
                 
-                <div class="mt-5 col-1">
-                        <div class="circulo">P</div>
-                </div>
-                <div class="mt-5 col-5">
-                    <div class="muro">
+                    <div class="post">
                             
                         <i class="fas fa-ellipsis-v"></i> 
                         <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
                             comentario sobre el tema</p>
-                        <img class="comida" src="../img/thanos.jpg" alt="comida" >
+                        <img class="img-post" src="../img/thanos.jpg" alt="imagen del post" >
                         <div class="iconos"></div>
                         <i class="fas fa-heart"></i>
                         <i class="fas fa-share-alt"></i>
                             
                     </div>
+                    <div class="comentarios">
+                            aca van los comentarios
+                    </div>
                 </div>
-
+                
+                
 
 
                     

@@ -17,8 +17,9 @@ body{
     left: 0px;            /* Distancia hasta el borde izquierdo */ 
     width:100%;
     z-index: 1; 
+    
     /* el z hace que no se vea transparente. el objeto por debajo del menu */
-
+    
 }
 .menu{
     text-decoration: none;
@@ -27,6 +28,7 @@ body{
     display: inline-block;
     font-family: 'Rubik', sans-menif;
     text-decoration: none;
+
 }
 
 .iconos-menu{
@@ -54,18 +56,35 @@ body{
     font-size: 20px;
     font-family: 'Rubik', sans-serif, medium 500;
     
-  
-    
 }
+
+.info-perfil{
+    margin: 0 auto;
+    width: 420px;
+    height: 225px;
+    padding-top: 25px;
+    padding-left: 25px;    
+    background-color: blue;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif, medium 500;
+
+}
+
+.texto-info-perfil{
+    padding-top: 25px;
+    background-color: red;
+    text-align: center;
+}
+
+
 .logo{
     text-align: left;
 
 
 }
-.muro{
-    margin: 0 auto;
-    width: 500px;
-    height: 450px;
+.post{
+    margin: 0 auto; 
+    width: auto;  
     padding: 0px;
     border: 1px solid grey;
     
@@ -73,8 +92,17 @@ body{
 
 }
 
-.comida{
-    width: 500px;
+.img-post{ 
+    /* la clase img-post es la  imagen del post contenida dentro de una columna */
+    width: 100%; /* esto hace que ocupe el 100% del tamaño de la columna q lo contiene */ 
+}
+.comentarios{
+    width: auto;
+    border: 1px solid grey;
+    margin-top: 10px;
+
+    padding: 10px;
+
 }
 
 .publicacion1{
@@ -143,7 +171,7 @@ body{
 
 }
  .col-4{
-     background-color: rgb(245, 239, 239);
+     background-color:red;
  }
 
  .form-inline {
