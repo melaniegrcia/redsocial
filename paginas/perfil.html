@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HOME</title>
+    <title>PERFIL</title>
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -61,18 +61,18 @@
                  <div class="seriesmenu ">
                         <br>
                         <div class="series">
-                            <p><strong>Los 100</strong></p>
+                            <p><strong>The big bang theory</strong></p>
                             <i class="fas fa-star"></i><br>
-                        <img src="../img/los100.jpg" width="200px">
+                        <img src="../img/bbt.jpg" width="200px">
                         
                        </div>
                     </div>
                     <div class="seriesmenu ">
                             <br>
                             <div class="series">
-                                <p><strong>Los 100</strong></p>
+                                <p><strong>Stranger Things</strong></p>
                                 <i class="fas fa-star"></i><br>
-                            <img src="../img/los100.jpg" width="200px">
+                            <img src="../img/stranger-things.png" width="200px">
                             
                            </div>
                     </div>
@@ -80,16 +80,39 @@
                 
              </div>
              <!--   col ocupa 5 columnas y con offset mueve tres a la derecha -->
-             <div class="mt-5 col-5">
-                <div class="mt-5 col-1">
+             <div class="mt-5 col-5" id="contenedor-principal">
+                    <div class="card p-2 mb-5"> <!-- carta para postear -->
+                            <form>
+                                <div class="form-group"> <!-- uso una carta prediseñada en boostrap-->
+                                    <label for="tipo-de-post">Tipo</label> <!-- elegir tipo de post -->
+                                    <select name="tipo-post" class="form-control" id="tipo-de-post">
+                                        <option>Reseña</option>
+                                        <option>Vistos</option>
+                                        <option>Nuevo contenido</option>
+                                    </select>
+                                </div>
+                                <div class="form-group"> <!-- escribir de que tema se trata el post-->
+                                    <label for="serie-pelicula">Tema</label>
+                                    <input type="text" class="form-control" id="serie-pelicula">
+                                </div>
+                                <div class="form-group"> <!-- mensaje del post-->
+                                        <label for="post-message">Mensaje</label>
+                                        <input type="text" class="form-control" id="post-message">
+                                    </div>
+                            </form>
+                            <button type="button" class="btn btn-primary" id="post-button">Postear</button>
+                        </div>
+                <div class="mt-5 col-1"> <!-- icono "P" del creador del post -->
                     <div class="circulo">P</div>
                 </div>
+                
                 <div class="mt-5 col-5">
                     <div class="muro">
                         
                         <i class="fas fa-ellipsis-v"></i> 
                         <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
-                            comentario sobre el tema</p>
+                        comentario sobre el tema</p>
+                        
                         <img class="comida" src="../img/got.jpg" alt="comida" >
                         <div class="iconos"></div>
                         <i class="fas fa-heart"></i>
@@ -101,20 +124,20 @@
                 
                 <div class="mt-5 col-1">
                         <div class="circulo">P</div>
-                    </div>
-                    <div class="mt-5 col-5">
-                        <div class="muro">
+                </div>
+                <div class="mt-5 col-5">
+                    <div class="muro">
                             
-                            <i class="fas fa-ellipsis-v"></i> 
-                            <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
-                                comentario sobre el tema</p>
-                            <img class="comida" src="../img/thanos.jpg" alt="comida" >
-                            <div class="iconos"></div>
-                            <i class="fas fa-heart"></i>
-                            <i class="fas fa-share-alt"></i>
+                        <i class="fas fa-ellipsis-v"></i> 
+                        <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
+                            comentario sobre el tema</p>
+                        <img class="comida" src="../img/thanos.jpg" alt="comida" >
+                        <div class="iconos"></div>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-share-alt"></i>
                             
-                        </div>
                     </div>
+                </div>
 
 
 
@@ -124,12 +147,20 @@
      </div>
 
        <div>
-           <p>fin</p>
+           <p><strong> FIN </strong></p>
             
        </div>
-
-   
-   
-
+       
+   <!-- link para javascript de jquery-->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+       crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+       crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+       crossorigin="anonymous"></script> 
+       <script src="../js/main.js"></script> <!-- link para que use mi codigo JS-->
 </body>
 </html>
