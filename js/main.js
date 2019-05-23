@@ -5,13 +5,12 @@ $(document).ready(function() {
             '<div class="mt-5 col-1">'+
             '<div class="circulo">P</div>'+
             '</div>'+
-            '<div class="mt-5 col">'+
-                '<div class="muro">'+
+                '<div class="post">'+
                     '<i class="fas fa-ellipsis-v"></i>'+
                     '<p class="publicacion1">'+ '<strong>'+ $("#serie-pelicula").val() +' </strong>' + 
                     '<br>' + $("#post-message").val() + '</p>'+
                     
-                    '<img class="comida" src="../img/ender.jpg" alt="comida" >'+
+                    '<img class="img-post" src="../img/ender.jpg" alt="comida" >'+
                     '<div class="iconos"></div>'+
                     '<i class="fas fa-heart"></i>'+
                     '<i class="fas fa-share-alt"></i>'+
@@ -19,7 +18,8 @@ $(document).ready(function() {
                 '</div>'+
 
                 '<div class="comentarios">'+
-                                'aca van los comentarios'+
+                    '<div class="circulo-coment">P</div>'+
+                            'aca van los comentarios'+
                 '</div>'+
         '</div>'
         //todo lo anterior, cada vez q presiono publicar, agrega una caja de post

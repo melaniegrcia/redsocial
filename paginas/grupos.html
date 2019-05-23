@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>GRUPOS</title>
 </head>
 <body>
-    <p>GRUPOS</p>
+
+    <div class="menuhome">
+       <img class="logo" src="../img/logo.jpg" alt="logo" width="50">
+       
+       <a class="menu" href="home.html">Inicio</a>
+       <a class="menu" href="perfil.html">Perfil</a>
+       <a class="menu" href="comunidades.html">Comunidades</a>
+       
+       <div class="iconos-menu">
+               <a href="perfil.html">
+                   <img src="../img/logo-usuario.png" width="26">
+               </a>
+       </div>
+       
+       <div class="iconos-menu">
+      <i class="fas fa-envelope"></i>
+       </div>
+       <div class="iconos-menu">
+           <i class="fas fa-bell"></i>
+       </div>
+       <form class="form-inline my-2 my-lg-0">
+               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+       </form> 
+     </div>
+
+
+   <!--  CON CONTAINER PUEDO MOVER EL MURO, PARA CREAR COLUMNAS -->
+    <div class="container-fluid"> <!-- container para las 2 filas principales "vistos" y "post"-->
+        <div class="mt-4 row">
+            <div class="mt-5 ml-5 col-lg-4 col-md-4 col-sm-12">
+               <div class="seriesmenu  d-none d-sm-block"> <!-- -->
+                   
+                   <div class="seriesmenu" >
+                       
+                       <!-- dnone y a partir de md en adelante se muestra -->
+                       <br>
+                       
+                       <p><strong>Mis Grupos</strong></p>
+
+                       <div class="series">
+                           <p><strong>the</strong></p>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <br>
+                       <img src="../img/los100.jpg" width="200">
+                       
+                       </div>
+                   </div>
+                   <div class="seriesmenu ">
+                           <br>
+                           <div class="series">
+                               <a href="the-meme-theory.html">
+                                    <p><strong>The meme theory</strong></p>
+                               </a>
+                               
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <i class="fas fa-star"></i>
+                               <br>
+                           <img src="../img/bbt.jpg" width="200">
+                           
+                       </div>
+                       </div>
+                       <div class="seriesmenu ">
+                               <br>
+                               <div class="series">
+                                   <p><strong>Stranger meme</strong></p>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <br>
+                               <img src="../img/stranger-meme.jpeg"  class="img-menu">
+                               
+                           </div>
+                       </div>
+               </div>
+               
+            </div>
+            <!--   col ocupa 5 columnas y con offset mueve tres a la derecha -->
+            <div class="mt-5 col-5" id="contenedor-principal">
+
+               <div class="mt-5 bloque-post">
+                   <div class="mt-5 col-1"> <!-- icono "P" del creador del post -->
+                       <div class="circulo">P</div>
+                   </div>
+                   
+                   <div class="post">
+                       
+                       <i class="fas fa-ellipsis-v"></i> 
+                       <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
+                       comentario sobre el tema</p>
+                       
+                       <img class="img-post" src="../img/meme-theory.png" alt="imagen del post" >
+                       <div class="iconos"></div>
+                       <i class="fas fa-heart"></i>
+                       <i class="fas fa-share-alt"></i>
+                       
+                   </div>
+                   <div class="comentarios">
+                        <div class="circulo-coment">P</div>
+                       aca van los comentarios
+                   </div>
+               </div>
+
+               <div class="bloque-post">
+                   <div class="mt-5 col-1">
+                           <div class="circulo">P</div>
+                   </div>
+               
+                   <div class="post">
+                           
+                       <i class="fas fa-ellipsis-v"></i> 
+                       <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
+                           comentario sobre el tema</p>
+                       <img class="img-post" src="../img/precio-historia.jpg" alt="imagen del post" >
+                       <div class="iconos"></div>
+                       <i class="fas fa-heart"></i>
+                       <i class="fas fa-share-alt"></i>
+                           
+                   </div>
+                   <div class="comentarios">
+                        <div class="circulo-coment">P</div>
+                           aca van los comentarios
+                   </div>
+               </div>
+               
+               
+
+
+                   
+            </div>
+        </div>
+    </div>
+
+      <div>
+          <p><strong> FIN </strong></p>
+           
+      </div>
+      
+  <!-- link para javascript de jquery-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script> 
+      <script src="../js/main.js"></script> <!-- link para que use mi codigo JS-->
 </body>
+
 </html>
