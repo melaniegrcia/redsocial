@@ -14,7 +14,7 @@ body{
     margin: 0 auto;
     border: 1px solid rgb(145, 144, 144);
     padding: 50px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-family:'Rubik', sans-serif;
     font-size: 13px;
     background: white;
@@ -25,25 +25,35 @@ body{
            LOGIN */
 
 .presentacion{
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
     padding: 50px;
     font-family:'Rubik', sans-serif;
     color: rgb(37, 37, 37);
+    text-align: center;
     
-    
-    
+}
+
+.imagenbox{
+    height: 300px;
+    justify-content: center;
+    padding: 30px;
 }
 h1{
     font-family: 'Righteous', cursive;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(218, 55, 55);
 
 }
 h2{
     font-family:'Rubik', sans-serif;
-    font-size: 35px;
+    font-size: 40px;
 }
 h5{  
-    font-family:'Rubik', sans-serif;font-size: 25px;
+    font-family:'Rubik', sans-serif;
+    font-size: 30px;
 
 }
 
@@ -58,6 +68,11 @@ h5{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
     background:   rgb(218, 55, 55);
     justify-content: space-around;
+    border: none;
+    /* para que el  boton ocupe todo */
+    width: 100%;
+    font-size: 15px;
+    font-weight: inherit;
   }
   .boton:hover {
       background: rgb(129, 14, 14);
@@ -68,11 +83,16 @@ h5{
 
 .botonlogin{
     background: rgb(218, 55, 55);
+    border: none;
+    width: 30%;
 }
 .botonlogin:hover {
     background: rgb(129, 14, 14);
 }
-
+.links {
+    color: rgb(37, 37, 37);
+    font-weight: bolder;
+}
 
 /* IMAGENES */
 .imagenes{
