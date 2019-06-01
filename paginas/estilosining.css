@@ -1,0 +1,106 @@
+body{
+    font-family:'Rubik', sans-serif;
+    margin: 30px;
+    background-color: rgb(199, 197, 197);
+    
+    
+}
+/* .fondo{
+    background: rgb(199, 197, 197);
+    margin: 0 auto;
+} */
+.signin{
+    width: 420px;
+    margin: 0 auto;
+    border: 1px solid rgb(145, 144, 144);
+    padding: 50px;
+    border-radius: 10px;
+    font-family:'Rubik', sans-serif;
+    font-size: 13px;
+    background: white;
+}
+
+#form-registro{
+    display: none;
+}
+
+/* ESTILOS DE PAGINA DE INICIO 
+           LOGIN */
+
+.presentacion{
+    width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    font-family:'Rubik', sans-serif;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    
+}
+
+.imagenbox{
+    height: 300px;
+    justify-content: center;
+    padding: 30px;
+}
+h1{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    color: rgb(218, 55, 55);
+
+}
+h2{
+ font-family:'Rubik', sans-serif;
+    font-size: 40px;
+}
+h5{  
+    font-family:'Rubik', sans-serif;
+    font-size: 30px;
+
+}
+
+
+/* 
+-------------------
+     BOTONES 
+--------------- */
+
+.boton {
+    color:  white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background:   rgb(218, 55, 55);
+    justify-content: space-around;
+    border: none;
+    /* para que el  boton ocupe todo */
+    width: 100%;
+    font-size: 15px;
+    font-weight: inherit;
+  }
+  .boton:hover {
+      background: rgb(129, 14, 14);
+  }
+  .boton:active {
+      background-color: rgb(129, 14, 14);
+  }
+
+.botonlogin{
+    background: rgb(218, 55, 55);
+    border: none;
+    width: 30%;
+}
+.botonlogin:hover {
+    background: rgb(129, 14, 14);
+}
+.links {
+    color: rgb(37, 37, 37);
+    font-weight: bolder;
+}
+
+/* IMAGENES */
+.imagenes{
+    width: 110px;
+    height: 160px;
+    float: left;
+    margin: 5px;
+    }
