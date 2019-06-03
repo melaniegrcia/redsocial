@@ -2,7 +2,7 @@ body{
     font-family: 'Rubik', sans-serif;
     text-decoration: none;
     margin: 0 auto;
-    background: rgb(114, 112, 112);
+    
     
     
 }
@@ -17,8 +17,9 @@ body{
     left: 0px;            /* Distancia hasta el borde izquierdo */ 
     width:100%;
     z-index: 1; 
+    
     /* el z hace que no se vea transparente. el objeto por debajo del menu */
-
+    
 }
 .menu{
     text-decoration: none;
@@ -27,6 +28,7 @@ body{
     display: inline-block;
     font-family: 'Rubik', sans-menif;
     text-decoration: none;
+
 }
 
 .iconos-menu{
@@ -54,18 +56,35 @@ body{
     font-size: 20px;
     font-family: 'Rubik', sans-serif, medium 500;
     
-  
-    
 }
+
+.info-perfil{
+    margin: 0 auto;
+    width: 420px;
+    height: 225px;
+    padding-top: 25px;
+    padding-left: 25px;    
+    background-color: blue;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif, medium 500;
+
+}
+
+.texto-info-perfil{
+    padding-top: 25px;
+    background-color: red;
+    text-align: center;
+}
+
+
 .logo{
     text-align: left;
 
 
 }
-.muro{
-    margin: 0 auto;
-    width: 500px;
-    height: 450px;
+.post{
+    margin: 0 auto; 
+    width: auto;  
     padding: 0px;
     border: 1px solid grey;
     
@@ -73,8 +92,17 @@ body{
 
 }
 
-.comida{
-    width: 500px;
+.img-post{ 
+    /* la clase img-post es la  imagen del post contenida dentro de una columna */
+    width: 100%; /* esto hace que ocupe el 100% del tamaño de la columna q lo contiene */ 
+}
+.comentarios{
+    width: auto;
+    border: 1px solid grey;
+    margin-top: 10px;
+
+    padding: 10px;
+
 }
 
 .publicacion1{
@@ -143,7 +171,7 @@ body{
 
 }
  .col-4{
-     background-color: rgb(245, 239, 239);
+     background-color:red;
  }
 
  .form-inline {
@@ -152,3 +180,111 @@ body{
 
  }
 
+ /* --------------------------------------------
+                CHAT ESTILOS */
+
+
+
+    
+.chat{
+    font-family: 'Rubik', sans-serif;
+    margin: 0px;
+    /* border: 1px solid rgb(180, 178, 178); */
+    padding: 0px;
+
+    
+    
+}
+.color1{
+    background:rgb(207, 204, 204);
+    height:612px;
+    margin:0;
+    font-size: 14px;
+    
+}
+
+
+
+
+    
+    
+
+
+.card{
+    width: 50%;
+    background: none;
+    border:none;
+}
+.card-body{
+padding: 16px;
+font-size: 14px;
+background-color: rgb(154, 156, 156);
+border-radius: 30px;
+border: none;
+
+
+}
+.list-group{
+    width: 90%;
+    height: 100%;
+    font-size: 12px;
+    margin: 0 20px ;
+}
+h5{
+    font-size:15px;
+    
+}
+.list-group-item {
+    background-color: none;
+    border-radius: 0px;
+    background: none;
+    border:1px solid rgb(100, 98, 98);
+    padding: 7px;
+    border-width:0 0 1px 0; 
+    border-radius: 0px;
+    color:rgb(90, 90, 90);
+    
+
+}
+
+.list-group-item.active {
+    z-index: none;
+    color:rgb(90, 90, 90);
+    background-color: none;
+    border-color:none;
+    background-color: none;
+    background: none;
+     border-top-left-radius:none;
+     border-top-right-radius:none;
+     
+}
+/* -----------------------------------------
+                 BARRA DE BUSQUEDA */
+
+                 
+.fa-search{
+    color:grey;
+    text-align: right;
+    top: -100px;
+
+}
+.form-control{
+    width: 50%;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-radius: none;
+    border: medium none;
+    display: inline-block;
+
+    
+
+}
+.srch_bar input{ 
+    border-radius: none;
+    border:1px solid rgb(100, 98, 98); 
+    border-width:0 0 1px 0; 
+    width:80%; 
+    padding:15px;
+    background:none;
+    margin: 15px;
+
+}
