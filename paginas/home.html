@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,15 +14,15 @@
 </head>
 <body>
     <div class="menuhome">
-        <img class="logo" src="../img/logo.png" alt="logo" width="50px">
+        <img class="logo" src="../img/logo-01.png" alt="logo" width="180">
         
         <a class="menu" href="home.html">Inicio</a>
         <a class="menu" href="perfil.html">Perfil</a>
-        <a class="menu" href="comunidades">Comunidades</a>
+        <a class="menu" href="comunidades.html">Comunidades</a>
         
         <div class="iconos-menu">
                 <a href="perfil.html">
-                    <img src="../img/perfil.jpg" width="26px">
+                    <img src="../img/logo-usuario.png" width="26"/>
                 </a>
         </div>
         
@@ -33,12 +33,12 @@
             <i class="fas fa-bell"></i>
         </div>
         <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search" >
+                
         </form>
-    </div>
+      </div>
     
-    </div>
+
     <!--  CON CONTAINER PUEDO MOVER EL MURO, PARA CREAR COLUMNAS -->
      <div class="container-fluid">
          <div class="mt-4 row">
@@ -54,7 +54,7 @@
                      <div class="series">
                          <p><strong>Los 100</strong></p>
                          <i class="fas fa-star"></i><br>
-                     <img src="../img/los100.jpg" width="200px">
+                     <img src="../img/los100.jpg" width="200">
                      
                     </div>
                  </div>
@@ -63,7 +63,7 @@
                         <div class="series">
                             <p><strong>Los 100</strong></p>
                             <i class="fas fa-star"></i><br>
-                        <img src="../img/los100.jpg" width="200px">
+                        <img src="../img/los100.jpg" width="200">
                         
                        </div>
                     </div>
@@ -72,7 +72,7 @@
                             <div class="series">
                                 <p><strong>Los 100</strong></p>
                                 <i class="fas fa-star"></i><br>
-                            <img src="../img/los100.jpg" width="200px">
+                            <img src="../img/los100.jpg" width="200">
                             
                            </div>
                     </div>
@@ -81,39 +81,51 @@
              </div>
              <!--   col ocupa 5 columnas y con offset mueve tres a la derecha -->
              <div class="mt-5 col-5">
-                <div class="mt-5 col-1">
-                    <div class="circulo">P</div>
-                </div>
-                <div class="mt-5 col-5">
-                    <div class="muro">
-                        
-                        <i class="fas fa-ellipsis-v"></i> 
-                        <p class="publicacion1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laboriosam doloremque fuga sit </p>
-                        
-                        <img class="comida" src="../img/got.jpg" alt="comida" >
-                        <div class="iconos"></div>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-share-alt"></i>
-                        
-                    </div>
-                </div>
 
-                
-                <div class="mt-5 col-1">
-                        <div class="circulo">P</div>
-                    </div>
-                    <div class="mt-5 col-5">
-                        <div class="muro">
+
+                    <div class="mt-5 bloque-post">
+                            <div class="mt-5 col-1"> <!-- icono "P" del creador del post -->
+                                <div class="circulo">P</div>
+                            </div>
                             
-                            <i class="fas fa-ellipsis-v"></i> 
-                            <p class="publicacion1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laboriosam doloremque fuga sit </p>
-                            
-                            <img class="comida" src="../img/thanos.jpg" alt="comida" >
-                            <div class="iconos"></div>
-                            <i class="fas fa-heart"></i>
-                            <i class="fas fa-share-alt"></i>
-                            
+                            <div class="post">
+                                
+                                <i class="fas fa-ellipsis-v"></i> 
+                                <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
+                                comentario sobre el tema</p>
+                                
+                                <img class="img-post" src="../img/got.jpg" alt="imagen del post" >
+                                <div class="iconos"></div>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                
+                            </div>
+                            <div class="comentarios">
+                                aca van los comentarios
+                            </div>
                         </div>
+
+                    <div class="bloque-post">
+                            <div class="mt-5 col-1">
+                                    <div class="circulo">P</div>
+                            </div>
+                        
+                            <div class="post">
+                                    
+                                <i class="fas fa-ellipsis-v"></i> 
+                                <p class="publicacion1"><strong>TÍTULO DEL TEMA</strong> <br>
+                                    comentario sobre el tema</p>
+                                <img class="img-post" src="../img/thanos.jpg" alt="imagen del post" >
+                                <div class="iconos"></div>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-share-alt"></i>
+                                    
+                            </div>
+                            <div class="comentarios">
+                                    aca van los comentarios
+                            </div>
+                        </div>
+
                     </div>
 
 
