@@ -288,3 +288,11 @@ h5{
     margin: 15px;
 
 }
+
+/* caja de mandar mensajes */
+.caja{
+    display: flex;
+    justify-content: end;
+
+
+}
