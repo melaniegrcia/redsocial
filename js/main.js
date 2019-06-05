@@ -1,38 +1,44 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     alert("afkgakbjvkfddfadkgsfahdsfhgasfjdafj")
 
-     // Codigo a ejecutarse una vez que se carga la pagina
-     $("#post-button").click(function() {
-         $("#contenedor-principal").append(
-            '<div class="mt-5 col-1">'+
-            '<div class="circulo">P</div>'+
-            '</div>'+
-                '<div class="post">'+
-                    '<i class="fas fa-ellipsis-v"></i>'+
-                    '<p class="publicacion1">'+ '<strong>'+ $("#serie-pelicula").val() +' </strong>' + 
-                    '<br>' + $("#post-message").val() + '</p>'+
-                    
-                    '<img class="img-post" src="../img/ender.jpg" alt="comida" >'+
-                    '<div class="iconos"></div>'+
-                    '<i class="fas fa-heart"></i>'+
-                    '<i class="fas fa-share-alt"></i>'+
-                        
-                '</div>'+
+    // Codigo a ejecutarse una vez que se carga la pagina
+    $("#post-button").click(function () {
+        $("#contenedor-principal").append(
+            '<div class="mt-5 col-1">' +
+            '<div class="circulo">P</div>' +
+            '</div>' +
+            '<div class="post">' +
+            '<i class="fas fa-ellipsis-v"></i>' +
+            '<p class="publicacion1">' + '<strong>' + $("#serie-pelicula").val() + ' </strong>' +
+            '<br>' + $("#post-message").val() + '</p>' +
 
-                '<div class="comentarios">'+
-                    '<div class="circulo-coment">P</div>'+
-                            'aca van los comentarios'+
-                '</div>'+
-        '</div>'
-        //todo lo anterior, cada vez q presiono publicar, agrega una caja de post
-        //a la columna de post, con los datos que hayamos agregado
-         );
-     });
+            '<img class="img-post" src="../img/ender.jpg" alt="comida" >' +
+            '<div class="iconos"></div>' +
+            '<i class="fas fa-heart"></i>' +
+            '<i class="fas fa-share-alt"></i>' +
+
+            '</div>' +
+
+            '<div class="comentarios">' +
+            '<div class="circulo-coment">P</div>' +
+            'aca van los comentarios' +
+            '</div>' +
+            '</div>'
+            //todo lo anterior, cada vez q presiono publicar, agrega una caja de post
+            //a la columna de post, con los datos que hayamos agregado
+        );
+    });
 
 
 
+    //cuando hay click en "botonRegistrar"
+    $("#botonRegistrar").click(function(){
+        location.href = "sining.html";
+        $("#form-ingreso").hide();
+        $("#form-registro").show();
+    });
 
           // Muestra el formulario de login
           $("#ir-a-login").click(function(){
